@@ -1,0 +1,54 @@
+@use '../base/index' as base;
+@use '../mixins/index' as mixin;
+
+.section {
+	padding: 20rem 0;
+}
+
+.section__wrapper {
+	@include mixin.sectionwrapper;
+}
+
+.section--flex {
+	@include mixin.flex($flex-direction: column);
+
+	.list {
+		@include mixin.flex($flex-wrap: wrap);
+		grid-gap: 1rem;
+		margin-top: 5rem;
+
+		@include mixin.breakpoint('min', 'tablet-landscape'){
+			grid-gap: 3rem;
+		}
+	}
+	.list__item {	
+		@include mixin.breakpoint('min', 'tablet-portrait'){
+			flex: 1;
+		}
+	}
+}
+
+.section--grid {
+	.list {
+		@include mixin.grid(
+			$portraitColumns: repeat(2, 1fr), 
+			$landscapeColumns: repeat(3, 1fr),
+			$landscapeGap: 4rem 4rem
+		);
+	}
+}
+
+.list__item {
+	@include mixin.font-size(1.4rem, 1.6rem, mixin.$screen-desktop-large);
+	border-radius: .6rem;
+	background-color: base.$color-gray-soft;
+	height: 12.5rem;
+	border: .4rem solid darken(base.$color-gray-soft, 15);
+}
+.item__inner {
+	@include mixin.flex($align-items: center, $justify-content: center);
+	text-align: center;
+	padding: 2rem;
+	border-radius: .5rem;
+	height: 100%;
+}

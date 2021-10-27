@@ -1,0 +1,21 @@
+@use '../base/index' as base;
+@use '../mixins/index' as mixin;
+
+.menu {
+	padding: 2rem 0;
+}
+.menu--column {
+	@include mixin.flex($flex-direction: column);
+}
+
+.link {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: base.$color-secondary;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken(base.$color-secondary, 10);
+	}
+}

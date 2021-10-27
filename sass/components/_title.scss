@@ -1,0 +1,10 @@
+@use '../mixins/index' as mixin;
+
+.title {
+	padding: 5rem 0;
+	background: #f2f2f2;
+}
+
+.title__wrapper {
+	@include mixin.sectionwrapper(100rem);
+}

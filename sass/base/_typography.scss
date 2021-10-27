@@ -1,0 +1,64 @@
+@use '../mixins/index' as mixin;
+@use 'colors' as color;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0 0 ;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+h1 {
+	@include mixin.font-size(2.8rem, 3.6rem, mixin.$screen-tablet-landscape);
+}
+h2 {
+	@include mixin.font-size(2.6rem, 3.4rem, mixin.$screen-tablet-landscape);
+}
+h3 {
+	@include mixin.font-size(2.2rem, 3rem, mixin.$screen-desktop-large);
+}
+h4 {
+	@include mixin.font-size(1.8rem, 2.4rem, mixin.$screen-desktop-large);
+}
+h5 {
+	@include mixin.font-size(1.6rem, 2rem, mixin.$screen-desktop-large);
+}
+
+p {
+	@include mixin.font-size(1.6rem, 2rem, mixin.$screen-desktop-large);
+	
+	* {
+		font-size: inherit;
+	}
+}
+
+.heading__margin {
+  margin-bottom: 2rem !important;
+}
+.heading__margin--medium {
+  margin-bottom: 3rem !important;
+}
+.heading__margin--big {
+  margin-bottom: 4rem !important;
+}
+.heading__margin--none {
+  margin-bottom: 0 !important;
+}
+
+.heading--center {
+  @include mixin.flex($justify-content: center);
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.text--orange {
+	color: color.$color-secondary;
+}

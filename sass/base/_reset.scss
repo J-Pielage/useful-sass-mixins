@@ -1,0 +1,55 @@
+html,
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0;
+  margin-bottom: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+ul,
+ol {
+  display: inline-block;
+  padding-left: 2rem;
+}
