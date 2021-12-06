@@ -1,15 +1,15 @@
-@import 'mixins/flex';
-@import 'mixins/breakpoints';
-@import 'mixins/grid';
-@import 'mixins/wrappers';
-@import 'mixins/fonts';
+@use 'mixins/flex';
+@use 'mixins/breakpoints';
+@use 'mixins/grid';
+@use 'mixins/wrappers';
+@use 'mixins/fonts';
 
-@import 'utilities/images';
+@use 'utilities/images';
 
-@import 'base/colors';
-@import 'base/reset';
-@import 'base/typography';
+@use 'base/colors';
+@use 'base/reset';
+@use 'base/typography';
 
-@import 'components/title';
-@import 'components/section';
-@import 'components/navigation';
+@use 'components/title';
+@use 'components/section';
+@use 'components/navigation';

@@ -1,0 +1,21 @@
+$font-heading-1: 'Ubuntu';
+$font-heading-2: 'Arvo';
+$font-body: 'Arial';
+
+$fonts: (
+	'ubuntu': $font-heading-1,
+	'arvo': $font-heading-2,
+  'arial': $font-body
+) !default;
+
+$font-fallback: "Arial, Helvetica, sans-serif";
+
+@mixin font-family($font,	$weight: 400) {
+  @if map-has-key($fonts, $font) {
+    font-family: map-get($fonts, $font), #{$font-fallback};
+  } @else {
+    @warn "`#{$font}` is not a valid font, available fonts: #{map-keys($fonts)}.";
+  }
+
+	font-weight: $weight;
+}

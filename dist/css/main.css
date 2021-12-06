@@ -1,15 +1,34 @@
 /**
 * calculate the max width based on input
 */
-/**
-* calculate the max width based on input
-*/
-/**
-* calculate the max width based on input
-*/
-/**
-* calculate the max width based on input
-*/
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("../../fonts/ubuntu/ubuntu-v15-latin-regular.woff2") format("woff2"), url("../../fonts/ubuntu/ubuntu-v15-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(""), url("../../fonts/ubuntu/ubuntu-v15-latin-500.woff2") format("woff2"), url("../../fonts/ubuntu/ubuntu-v15-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("../../fonts/ubuntu/ubuntu-v15-latin-700.woff2") format("woff2"), url("../../fonts/ubuntu/ubuntu-v15-latin-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Arvo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("../../fonts/arvo/arvo-v14-latin-700.woff2") format("woff2"), url("../../fonts/arvo/arvo-v14-latin-700.woff") format("woff");
+}
 .image--cover,
 .image--contain {
   height: 100%;
@@ -84,9 +103,6 @@ ol {
   padding-left: 2rem;
 }
 
-/**
-* calculate the max width based on input
-*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -96,49 +112,46 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   margin: 0 0;
   letter-spacing: 0.2rem;
-  font-weight: 500;
   line-height: 1.6;
 }
 
 h1 {
   font-size: 2.8rem;
   line-height: 1.8;
-  font-weight: 400;
 }
 @media (min-width: 64em) {
   h1 {
-    font-size: 3.6rem;
+    font-size: 4.2rem;
   }
 }
 
 h2 {
   font-size: 2.6rem;
   line-height: 1.8;
-  font-weight: 400;
 }
 @media (min-width: 64em) {
   h2 {
-    font-size: 3.4rem;
+    font-size: 3.6rem;
   }
 }
 
 h3 {
   font-size: 2.2rem;
   line-height: 1.8;
-  font-weight: 400;
 }
 @media (min-width: 90em) {
   h3 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
 h4 {
   font-size: 1.8rem;
   line-height: 1.8;
-  font-weight: 400;
 }
 @media (min-width: 90em) {
   h4 {
@@ -149,7 +162,6 @@ h4 {
 h5 {
   font-size: 1.6rem;
   line-height: 1.8;
-  font-weight: 400;
 }
 @media (min-width: 90em) {
   h5 {
@@ -158,13 +170,12 @@ h5 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.8;
-  font-weight: 400;
 }
 @media (min-width: 90em) {
   p {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 p * {
@@ -200,13 +211,24 @@ p * {
   }
 }
 
+.heading--alternative {
+  font-family: "Arvo", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.heading--alternative:after {
+  content: "";
+  flex: 0 0 40%;
+  height: 0.5rem;
+  display: block;
+  background-color: #000935;
+}
+
 .text--orange {
   color: #f8a91a;
 }
 
-/**
-* calculate the max width based on input
-*/
 .title {
   padding: 5rem 0;
   background: #f2f2f2;
@@ -219,188 +241,8 @@ p * {
   padding: 0 2rem;
 }
 
-html,
-body {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-  min-width: 0;
-  min-height: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  vertical-align: bottom;
-}
-
-textarea:focus,
-input:focus,
-button:focus {
-  outline: none;
-}
-
-p,
-ul,
-ol {
-  margin: 0 0;
-  margin-bottom: 0;
-}
-
-p:not(:last-of-type),
-ul:not(:last-of-type),
-ol:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-
-ul,
-ol {
-  display: inline-block;
-  padding-left: 2rem;
-}
-
-/**
-* calculate the max width based on input
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0 0;
-  letter-spacing: 0.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-h1 {
-  font-size: 2.8rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 64em) {
-  h1 {
-    font-size: 3.6rem;
-  }
-}
-h2 {
-  font-size: 2.6rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 64em) {
-  h2 {
-    font-size: 3.4rem;
-  }
-}
-h3 {
-  font-size: 2.2rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  h3 {
-    font-size: 3rem;
-  }
-}
-h4 {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  h4 {
-    font-size: 2.4rem;
-  }
-}
-h5 {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  h5 {
-    font-size: 2rem;
-  }
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  p {
-    font-size: 2rem;
-  }
-}
-p * {
-  font-size: inherit;
-}
-
-.heading__margin {
-  margin-bottom: 2rem !important;
-}
-
-.heading__margin--medium {
-  margin-bottom: 3rem !important;
-}
-
-.heading__margin--big {
-  margin-bottom: 4rem !important;
-}
-
-.heading__margin--none {
-  margin-bottom: 0 !important;
-}
-
-.heading--center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 0 0 100%;
-  text-align: center;
-}
-
-@media screen and (min-width: 48em) {
-  .heading--center {
-    flex-direction: row;
-  }
-}
-.text--orange {
-  color: #f8a91a;
-}
-
 .section {
-  padding: 20rem 0;
+  padding: 5rem 0;
 }
 
 .section__wrapper {
@@ -456,7 +298,6 @@ p * {
 .list__item {
   font-size: 1.4rem;
   line-height: 1.8;
-  font-weight: 400;
   border-radius: 0.6rem;
   background-color: #f5f6f7;
   height: 12.5rem;
@@ -482,186 +323,6 @@ p * {
   .item__inner {
     flex-direction: row;
   }
-}
-
-html,
-body {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-  min-width: 0;
-  min-height: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  vertical-align: bottom;
-}
-
-textarea:focus,
-input:focus,
-button:focus {
-  outline: none;
-}
-
-p,
-ul,
-ol {
-  margin: 0 0;
-  margin-bottom: 0;
-}
-
-p:not(:last-of-type),
-ul:not(:last-of-type),
-ol:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-
-ul,
-ol {
-  display: inline-block;
-  padding-left: 2rem;
-}
-
-/**
-* calculate the max width based on input
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0 0;
-  letter-spacing: 0.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-h1 {
-  font-size: 2.8rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 64em) {
-  h1 {
-    font-size: 3.6rem;
-  }
-}
-h2 {
-  font-size: 2.6rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 64em) {
-  h2 {
-    font-size: 3.4rem;
-  }
-}
-h3 {
-  font-size: 2.2rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  h3 {
-    font-size: 3rem;
-  }
-}
-h4 {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  h4 {
-    font-size: 2.4rem;
-  }
-}
-h5 {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  h5 {
-    font-size: 2rem;
-  }
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  font-weight: 400;
-}
-
-@media (min-width: 90em) {
-  p {
-    font-size: 2rem;
-  }
-}
-p * {
-  font-size: inherit;
-}
-
-.heading__margin {
-  margin-bottom: 2rem !important;
-}
-
-.heading__margin--medium {
-  margin-bottom: 3rem !important;
-}
-
-.heading__margin--big {
-  margin-bottom: 4rem !important;
-}
-
-.heading__margin--none {
-  margin-bottom: 0 !important;
-}
-
-.heading--center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 0 0 100%;
-  text-align: center;
-}
-
-@media screen and (min-width: 48em) {
-  .heading--center {
-    flex-direction: row;
-  }
-}
-.text--orange {
-  color: #f8a91a;
 }
 
 .menu {

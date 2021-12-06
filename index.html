@@ -1,94 +1,97 @@
-<section class="title">
-	<div class="title__wrapper">
-		<h1 class="heading-1 heading__margin--big">Violet88 - Sass Mixins</h1>
-
-		<div class="navigation">
-			<h3 class="navigation__title">Voorbeelden</h3>
-	
-			<nav class="menu menu--column">
-				<a class="link" href="#flex">Flex</a>
-				<a class="link" href="#grid">Grid</a>
-				<a class="link" href="#typography">Typography</a>
-			</nav>
-		</div>
-	</div>
-</section>
-
-<section class='section section--flex' id="flex">
-	<div class="section__wrapper">
-		<h2 class="heading-1">Flex</h2>
-		<p>
-			The flex mixin is there for simple layouts, for example left/right sections like the examples below <br /> 
-			For more complex layouts with evenly spaced divs etcetera see <a class="text--orange" href="$grid">our grids</a>
-		</p>
-
-		<div class="list">
-			<div class="list__item">
-				<div class="item__inner">
-					Item 1
-				</div>
-			</div>
-			<div class="list__item">
-				<div class="item__inner">
-					Item 2
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class='section section--grid' id="grid">
-	<div class="section__wrapper">
-		<h2 class="heading-1">Grid</h2>
-
-		<div class="list">
-			<div class="list__item">
-				<div class="item__inner">
-					Item 1
-				</div>
-			</div>
-			<div class="list__item">
-				<div class="item__inner">
-					Item 2
-				</div>
-			</div>
-			<div class="list__item">
-				<div class="item__inner">
-					Item 3
-				</div>
-			</div>
-			<div class="list__item">
-				<div class="item__inner">
-					Item 4
-				</div>
-			</div>
-			<div class="list__item">
-				<div class="item__inner">
-					Item 5
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class='section section--grid' id="typography">
-	<div class="section__wrapper">
-		<h2 class="heading-1">Typography</h2>
-	</div>
-</section>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sass mixin</title>
+	<title>Violet88 - Sass Mixins</title>
 
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+	<section class="title">
+		<div class="title__wrapper">
+			<h1 class="heading-1 heading__margin--small">@use en @forward Scss</h1>
+			<h3 class="heading-3 heading__margin--small">nieuwe Sass mixins</h3>
 	
+			<div class="navigation">		
+				<nav class="menu menu--column">
+					<a class="link" href="#flex">Flex</a>
+					<a class="link" href="#grid">Grid</a>
+					<a class="link" href="#typography">Typography</a>
+				</nav>
+			</div>
+		</div>
+	</section>
+	
+	<section class='section section--flex' id="flex">
+		<div class="section__wrapper">
+			<h2 class="heading-2 heading__margin--big heading--alternative">Flex</h2>
+			<p>
+				The flex mixin is there for simple layouts, for example left/right sections like the examples below <br /> 
+				For more complex layouts with evenly spaced divs etcetera see <a class="text--orange" href="$grid">our grids</a>
+			</p>
+	
+			<div class="list">
+				<div class="list__item">
+					<div class="item__inner">
+						Item 1
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="item__inner">
+						Item 2
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class='section section--grid' id="grid">
+		<div class="section__wrapper">
+			<h2 class="heading-2 heading__margin--big heading--alternative">Grid</h2>
+	
+			<div class="list">
+				<div class="list__item">
+					<div class="item__inner">
+						Item 1
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="item__inner">
+						Item 2
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="item__inner">
+						Item 3
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="item__inner">
+						Item 4
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="item__inner">
+						Item 5
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class='section section--grid' id="typography">
+		<div class="section__wrapper">
+			<h2 class="heading-1 heading__margin--big heading--alternative">Typography</h2>
+	
+			<h1 class="heading-1">Heading 1</h1>
+			<h2 class="heading-2">Heading 2</h2>
+			<h3 class="heading-3">Heading 3</h3>
+			<h4 class="heading-4">Heading 4</h4>
+			<h5 class="heading-5">Heading 5</h5>
+		</div>
+	</section>
 </body>
 </html>
