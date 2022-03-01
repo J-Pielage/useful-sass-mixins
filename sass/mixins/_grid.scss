@@ -1,42 +1,42 @@
-@use './breakpoints' as breakpoint;
+@use "./breakpoints" as breakpoint;
 
 @mixin grid(
-	$gap: 2rem,
-	$portraitColumns: null,
-	$landscapeColumns: null,
-	$desktopColumns: null,
-	$portraitGap: null,
-	$landscapeGap: null,
-	$desktopGap: null,
+  $gap: 2rem,
+  $portraitColumns: null,
+  $landscapeColumns: null,
+  $desktopColumns: null,
+  $portraitGap: null,
+  $landscapeGap: null,
+  $desktopGap: null
 ) {
-	display: grid;
-	gap: $gap;
+  display: grid;
+  gap: $gap;
 
-	@if ( $portraitColumns != null ) {
-		@include breakpoint.breakpoint('min', 'tablet-portrait') {
-			grid-template-columns: $portraitColumns;
+  @if ($portraitColumns != null) {
+    @include breakpoint.breakpoint("min", "tablet-portrait") {
+      grid-template-columns: $portraitColumns;
 
-			@if $portraitGap {
-				grid-gap: $portraitGap;
-			}
-		}
-	}
-	@if ( $landscapeColumns != null ) {
-		@include breakpoint.breakpoint('min', 'tablet-landscape') {
-			grid-template-columns: $landscapeColumns;
+      @if $portraitGap {
+        grid-gap: $portraitGap;
+      }
+    }
+  }
+  @if ($landscapeColumns != null) {
+    @include breakpoint.breakpoint("min", "tablet-landscape") {
+      grid-template-columns: $landscapeColumns;
 
-			@if $landscapeGap {
-				grid-gap: $landscapeGap;
-			}
-		}
-	}
-	@if ( $desktopColumns != null ) {
-		@include breakpoint.breakpoint('min', 'desktop') {
-			grid-template-columns: $desktopColumns;
+      @if $landscapeGap {
+        grid-gap: $landscapeGap;
+      }
+    }
+  }
+  @if ($desktopColumns != null) {
+    @include breakpoint.breakpoint("min", "desktop") {
+      grid-template-columns: $desktopColumns;
 
-			@if $desktopGap {
-				grid-gap: $desktopGap;
-			}
-		}
-	}
+      @if $desktopGap {
+        grid-gap: $desktopGap;
+      }
+    }
+  }
 }

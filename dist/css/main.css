@@ -1,6 +1,3 @@
-/**
-* calculate the max width based on input
-*/
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;
@@ -29,6 +26,9 @@
   font-display: swap;
   src: local(""), url("../../fonts/arvo/arvo-v14-latin-700.woff2") format("woff2"), url("../../fonts/arvo/arvo-v14-latin-700.woff") format("woff");
 }
+/**
+* calculate the max width based on input
+*/
 .image--cover,
 .image--contain {
   height: 100%;
@@ -200,15 +200,9 @@ p * {
 
 .heading--center {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   flex: 0 0 100%;
   text-align: center;
-}
-@media screen and (min-width: 48em) {
-  .heading--center {
-    flex-direction: row;
-  }
 }
 
 .heading--alternative {
@@ -229,16 +223,22 @@ p * {
   color: #f8a91a;
 }
 
-.title {
-  padding: 5rem 0;
-  background: #f2f2f2;
+.menu {
+  padding: 2rem 0;
 }
 
-.title__wrapper {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100rem;
-  padding: 0 2rem;
+.menu--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #f8a91a;
+}
+.link:hover, .link:focus, .link:active {
+  color: #d88e07;
 }
 
 .section {
@@ -260,7 +260,7 @@ p * {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   margin-top: 5rem;
 }
 @media screen and (min-width: 48em) {
@@ -270,7 +270,7 @@ p * {
 }
 @media screen and (min-width: 64em) {
   .section--flex .list {
-    grid-gap: 3rem;
+    grid-gap: 4rem;
   }
 }
 @media screen and (min-width: 48em) {
@@ -311,7 +311,6 @@ p * {
 
 .item__inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -319,26 +318,15 @@ p * {
   border-radius: 0.5rem;
   height: 100%;
 }
-@media screen and (min-width: 48em) {
-  .item__inner {
-    flex-direction: row;
-  }
+
+.title {
+  padding: 5rem 0;
+  background: #f2f2f2;
 }
 
-.menu {
-  padding: 2rem 0;
-}
-
-.menu--column {
-  display: flex;
-  flex-direction: column;
-}
-
-.link {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #f8a91a;
-}
-.link:hover, .link:focus, .link:active {
-  color: #d88e07;
+.title__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  padding: 0 2rem;
 }

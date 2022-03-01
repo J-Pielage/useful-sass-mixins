@@ -1,12 +1,12 @@
 @mixin sectionwrapper(
-	$maxWidth: null, 
-	$setBreakpointMaxWidth: null, 
-	$setBreakpointMaxWidthSize: null, 
-	$setDefaultPadding: null, 
-	$setBreakpointPadding: null, 
-	$setBreakpointPaddingSize: null, 
-	$setClearPaddingWidth: null
-) { 
+  $maxWidth: null,
+  $setBreakpointMaxWidth: null,
+  $setBreakpointMaxWidthSize: null,
+  $setDefaultPadding: null,
+  $setBreakpointPadding: null,
+  $setBreakpointPaddingSize: null,
+  $setClearPaddingWidth: null
+) {
   margin: 0 auto;
   width: 100%;
 
@@ -37,6 +37,6 @@
   @if ($setClearPaddingWidth != null) {
     @include breakpoint($setClearPaddingWidth) {
       padding: 0 0 !important;
-    } 
+    }
   }
 }

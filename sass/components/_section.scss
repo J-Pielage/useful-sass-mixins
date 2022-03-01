@@ -13,15 +13,15 @@
 	@include mixin.flex($flex-direction: column);
 
 	.list {
-		@include mixin.flex($flex-wrap: wrap);
-		grid-gap: 1rem;
+		@include mixin.flex($flex-wrap: wrap, $dynamic-direction-breakpoint: 'tablet-portrait');
+		grid-gap: 2rem;
 		margin-top: 5rem;
 
 		@include mixin.breakpoint('min', 'tablet-landscape'){
-			grid-gap: 3rem;
+			grid-gap: 4rem;
 		}
 	}
-	.list__item {	
+	.list__item {
 		@include mixin.breakpoint('min', 'tablet-portrait'){
 			flex: 1;
 		}
@@ -31,7 +31,7 @@
 .section--grid {
 	.list {
 		@include mixin.grid(
-			$portraitColumns: repeat(2, 1fr), 
+			$portraitColumns: repeat(2, 1fr),
 			$landscapeColumns: repeat(3, 1fr),
 			$landscapeGap: 4rem 4rem
 		);

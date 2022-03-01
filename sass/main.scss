@@ -1,15 +1,4 @@
-@use 'mixins/flex';
-@use 'mixins/breakpoints';
-@use 'mixins/grid';
-@use 'mixins/wrappers';
-@use 'mixins/fonts';
-
-@use 'utilities/images';
-
-@use 'base/colors';
-@use 'base/reset';
-@use 'base/typography';
-
-@use 'components/title';
-@use 'components/section';
-@use 'components/navigation';
+@forward 'mixins';
+@forward 'utilities';
+@forward 'base';
+@forward 'components';
